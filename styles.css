@@ -1,0 +1,142 @@
+ *, *::after, 
+ *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+  }
+ 
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1.3em 1.5em;
+  background-color: #10101d;
+  color: #f9f9f9;
+}
+
+.title-wrapper {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3px;
+}
+#currentTime {
+  font-size: 0.875rem;
+}
+
+form {
+  padding: 20px 10px;
+  border-bottom: 1px solid #d0d0d088;
+}
+
+.note {
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: -0.5em;
+  text-align: center;
+  max-width: 50ch;
+}
+fieldset {
+  padding: 10px 0 0;
+  border: none;
+}
+
+form input, select{
+  display: inline-block;
+  margin-bottom: 20px ;
+  width: 100%;
+  padding: 7px 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  background-color: #d0d0d0;
+}
+
+label {
+  display: block;
+  padding-bottom:7px;
+}
+
+fieldset#bio label, input[type="radio"] {
+  display: inline-block;
+  width: fit-content;
+}
+
+fieldset#bio label {
+  margin-right: 20px;
+}
+
+fieldset#bio label:last-of-type {
+  width: 100%;
+}
+
+.output-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-height: 50px;
+  background-color: #e8e8e8;
+  color: #101010;
+  border-radius: 5px;
+  font-size: 36px;
+  width: 70%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.footnote {
+  margin-top: 2em;
+  display: none;
+}
+
+#interpretation #category {
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+#warning {
+  color: red;
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 0.875rem;
+  display: none;
+}

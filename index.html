@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+      <div class="wrapper">
+         <div class="title-wrapper">
+          <h1>BIM Calculate</h1>
+          <p id="currentTime"></p>
+         </div>
+         
+         <p class="note">The body mass index (BMI) calculator estimates the amount of body fat a person has in relation to age, height, and weight.</p>
+         
+         <form>
+          
+          <fieldset id="bio">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+          
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" minlength="1" maxlength="150">
+          </fieldset>
+
+
+          <fieldset id="metrics">
+            <label for="length">Select Unit </label>
+            <select type="text" name="length" id="length">
+              <option value="kilogram">Kilogram</option>
+              <option value="kilogram">Imperial</option>
+            </select>
+
+            <label for="weight">Weight in Kilogram (kg) </label>
+            <input type="text" name="weight" id="weight">
+          
+            <label for="height">Height in Centimeter (cm) </label>
+            <input type="text" name="height" id="height">
+          </fieldset>
+          
+          <button type="button" id="calcBtn">Calculate BMI</button>
+        </form>
+          
+          <div class="output-container">
+            <p>Your BMI</p>
+            <p class="output" id="result">0</p>
+          </div>
+
+          <div class="footnote" id="footnote">
+            <p id="interpretation"><span id="category">Empty</span></p>
+            <p id="warning">Keep in mind that BMI is not a perfect measure,
+              as it does not take into account muscle mass, bone density,
+              or body composition.
+            </p>
+          </div>
+      </div>
+     
+        <script src="script.js"></script>
+    </body>
+</html>
